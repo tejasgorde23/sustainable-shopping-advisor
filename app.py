@@ -190,7 +190,7 @@ if "pdf_loaded" not in st.session_state:
 
 # ── Sidebar ───────────────────────────────────────────────────────────────────
 with st.sidebar:
-    st.image("assets/hero_banner.png", width="stretch")
+    st.image("assets/hero_banner.png", use_container_width=True)
     st.markdown("## 🌿 Eco Advisor")
     st.markdown("<span style='color:#66bb6a;font-size:0.85rem;'>INT428 · LPU · Powered by Groq</span>", unsafe_allow_html=True)
     st.markdown("---")
@@ -264,7 +264,7 @@ def send_message(user_input: str, history_key: str, system: str) -> str:
 # ── Hero Header ───────────────────────────────────────────────────────────────
 col_hero_img, col_hero_text = st.columns([1, 2])
 with col_hero_img:
-    st.image("assets/hero_banner.png", width="stretch")
+    st.image("assets/hero_banner.png", use_container_width=True)
 with col_hero_text:
     st.markdown('<div class="hero-title">🌿 Sustainable Shopping Advisor</div>', unsafe_allow_html=True)
     st.markdown('<div class="hero-subtitle">AI-powered guide for eco-friendly purchasing decisions</div>', unsafe_allow_html=True)
@@ -291,7 +291,7 @@ tab1, tab2, tab3, tab4, tab5 = st.tabs([
 with tab1:
     c1, c2 = st.columns([1, 3])
     with c1:
-        st.image("assets/chat_icon.png", width="stretch")
+        st.image("assets/chat_icon.png", use_container_width=True)
     with c2:
         st.markdown('<div class="section-header">💬 Ask the Eco Advisor</div>', unsafe_allow_html=True)
         st.markdown('<div class="section-sub">Ask anything about sustainable shopping, eco-labels, green products, or environmental impact.</div>', unsafe_allow_html=True)
@@ -321,7 +321,7 @@ with tab1:
 with tab2:
     c1, c2 = st.columns([1, 3])
     with c1:
-        st.image("assets/scorer_icon.png", width="stretch")
+        st.image("assets/scorer_icon.png", use_container_width=True)
     with c2:
         st.markdown('<div class="section-header">📊 Product Sustainability Scorer</div>', unsafe_allow_html=True)
         st.markdown('<div class="section-sub">Enter any product name to get a detailed eco-sustainability analysis and score out of 10.</div>', unsafe_allow_html=True)
@@ -351,7 +351,7 @@ with tab2:
 with tab3:
     c1, c2 = st.columns([1, 3])
     with c1:
-        st.image("assets/alternatives_icon.png", width="stretch")
+        st.image("assets/alternatives_icon.png", use_container_width=True)
     with c2:
         st.markdown('<div class="section-header">♻️ Find Sustainable Alternatives</div>', unsafe_allow_html=True)
         st.markdown('<div class="section-sub">Enter a product you currently use and get 3 curated eco-friendly alternatives.</div>', unsafe_allow_html=True)
@@ -381,7 +381,7 @@ with tab3:
 with tab4:
     c1, c2 = st.columns([1, 3])
     with c1:
-        st.image("assets/compare_icon.png", width="stretch")
+        st.image("assets/compare_icon.png", use_container_width=True)
     with c2:
         st.markdown('<div class="section-header">⚖️ Compare Products — Sustainability</div>', unsafe_allow_html=True)
         st.markdown('<div class="section-sub">Compare two products side-by-side to see which is more eco-friendly and why.</div>', unsafe_allow_html=True)
@@ -413,7 +413,7 @@ with tab4:
 with tab5:
     c1, c2 = st.columns([1, 3])
     with c1:
-        st.image("assets/document_icon.png", width="stretch")
+        st.image("assets/document_icon.png", use_container_width=True)
     with c2:
         st.markdown('<div class="section-header">📄 Document-Based Q&A</div>', unsafe_allow_html=True)
         st.markdown('<div class="section-sub">Upload a PDF (sustainability report, product manual, eco certification) and ask questions about its content.</div>', unsafe_allow_html=True)
@@ -454,5 +454,6 @@ st.markdown("""
   <span style="color:#4caf50;">♻️ Making the world greener, one purchase at a time.</span>
 </div>
 """, unsafe_allow_html=True)
+
 
 
